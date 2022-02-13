@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/default-style.css">
+    <link rel="stylesheet" href="./styles/stylesAdaptive.css">
+    <link href="./assets/icons/fav.svg" rel="icon">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Merriweather:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
+    <title>Portfolio</title>
+</head>
+<body>
+    <div class='middle-container'>
+        <header>
+            <div class="logo"></div>
+            <div class="hamburger-menu">
+                <input id="menu-toggle" type="checkbox"/>
+                <label class="menu-burger-header mbh-moon" for="menu-toggle">
+                    <span></span>
+                </label>
+                <div class="black-invis-block"></div>
+                <ul class="burger-nav">
+                    <li><a href="#skills" onclick="document.getElementById('menu-toggle').checked = false;">Skills</a></li>
+                    <li><a href="#portfolio" onclick="document.getElementById('menu-toggle').checked = false;">Portfolio</a></li>
+                    <li><a href="#video" onclick="document.getElementById('menu-toggle').checked = false;">Video</a></li>
+                    <li><a href="#price" onclick="document.getElementById('menu-toggle').checked = false;">Price</a></li>
+                    <li><a href="#contacts" onclick="document.getElementById('menu-toggle').checked = false;">Contacts</a></li>
+                </ul>
+            </div>
+            <div class="light sun"></div>
+            <ul class="lang">
+                <li class="bold-def-text active-text">en</li>
+                <li class="bold-def-text slash">/</li>
+                <li class="bold-def-text">ru</li>
+            </ul>
+            <nav>
+                <ul>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#video">Video</a></li>
+                    <li><a href="#price">Price</a></li>
+                    <li><a href="#contacts">Contacts</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section class="hero">
+                <h1>Alexa Rise</h1>
+                <p>
+                    Save sincere emotions, romantic feelings and happy moments of life together with professional photographer Alexa Rise
+                </p>
+                <button id="button" class="hero-button">Hire me</button>
+            </section>
+            <section class="skills section-flex" id="skills">
+                <h2 class="section-title">Skills</h2>
+                <ul class="skills-items">
+                    <li>
+                        <img src='./assets/icons/camera-1.svg' alt='Digital photography icon'>
+                        <span class="bold-def-text">Digital photography</span>
+                        <p>High-quality photos in the studio and on the nature</p>
+                    </li>
+                    <li>
+                        <img src='./assets/icons/video-1.svg' alt='Digital photography icon'>
+                        <span class="bold-def-text">Video shooting</span>
+                        <p>Capture your moments so that they always stay with you</p>
+                    </li>
+                    <li>
+                        <img src='./assets/icons/image-1.svg' alt='Digital photography icon'>
+                        <span class="bold-def-text">Retouch</span>
+                        <p>I strive to make photography surpass reality</p>
+                    </li>
+                    <li>
+                        <img src='./assets/icons/mic-1.svg' alt='Digital photography icon'>
+                        <span class="bold-def-text">Audio</span>
+                        <p>Professional sounds recording for video, advertising, portfolio</p>
+                    </li>
+                </ul>
+            </section>
+            <section class="portfolio section-flex" id="portfolio">
+                <h2 class="section-title">Portfolio</h2>
+                <div class="portfolio-buttons">
+                    <button class="photo-button moon-btn winter">Winter</button>
+                    <button class="photo-button moon-btn spring">Spring</button>
+                    <button class="photo-button moon-btn summer">Summer</button>
+                    <button class="active moon-btn autumn">Autumn</button>
+                </div>
+                <div class="images">
+                    <img height="560" width="450" src="./assets/img/autumn/1.jpg" alt="couple kissing outdoors">
+                    <img height="560" width="450" src="./assets/img/autumn/2.jpg" alt="horse stands on the background of sunset">
+                    <img height="560" width="450" src="./assets/img/autumn/3.jpg" alt="kid playing">
+                    <img height="560" width="450" src="./assets/img/autumn/4.jpg" alt="hills and oak">
+                    <img height="560" width="450" src="./assets/img/autumn/5.jpg" alt="a couple of old people resting in nature">
+                    <img height="560" width="450" src="./assets/img/autumn/6.jpg" alt="photo how to make a photo of an oak leaf">
+                </div>
+            </section>
+            <div id="video"></div>
+            <section class="video section-flex">
+                <h2 class="section-title">Video</h2>
+                <div class="video-back">
+                    <button class="video-button"></button>
+                </div>
+            </section>
+            <div id="price"></div>
+            <section class="price section-flex">
+                <h2 class="section-title">Price</h2>
+                <div class="prices">
+                    <div class="price-block">
+                        <h3>Standard</h3>
+                        <span class="price-in-block">500 $</span>
+                        <ul class="include-list">
+                            <li>One location</li>
+                            <li>120 photos in color</li>
+                            <li>12 photos in retouch</li>
+                            <li>Readinnes 2-3 weeks</li>
+                            <li>Make up, visage</li>
+                        </ul>
+                        <button class="price-button">Order shooting</button>
+                    </div>
+                    <div class="price-block">
+                        <h3>Premium</h3>
+                        <span class="price-in-block">700 $</span>
+                        <ul class="include-list">
+                            <li>One or two location</li>
+                            <li>200 photos in color</li>
+                            <li>20 photos in retouch</li>
+                            <li>Readinnes 1-2 weeks</li>
+                            <li>Make up, visage</li>
+                        </ul>
+                        <button class="price-button">Order shooting</button>
+                    </div>
+                    <div class="price-block">
+                        <h3>Gold</h3>
+                        <span class="price-in-block">1000 $</span>
+                        <ul class="include-list">
+                            <li>Three location or more</li>
+                            <li>300 photos in color</li>
+                            <li>50 photos in retouch</li>
+                            <li>Readinnes 1 weeks</li>
+                            <li>Make up, visage, hairstyle</li>
+                        </ul>
+                        <button class="price-button">Order shooting</button>
+                    </div>
+                </div>
+            </section>
+            <section class="contacts" id="contacts">
+                <h2 class="section-title-contact">Contact me</h2>
+                <form>
+                    <input type="email" placeholder="E-mail" class="email">
+                    <input type="tel" placeholder="Phone" class='phone'>
+                    <textarea placeholder="Message"></textarea>
+                    <button>Send message</button>
+                </form>
+            </section>
+        </main>
+
+        <footer>
+            <ul class="org-git">
+                <li>©</li>
+                <li>2022</li>
+                <li><a href="https://github.com/PblCbGomel" target="_blank">github</a></li>
+            </ul>
+            <div class="rss"><a href="https://rs.school/js-stage0/" target="_blank">Rolling Scopes School</a></div>
+            <ul class="footer-links">
+                <li><a href=""><img src="assets/icons/Vector.svg" alt="inst"></a></li>
+                <li><a href=""><img src="assets/icons/Vector-1.svg" alt="facebook"></a></li>
+                <li><a href=""><img src="assets/icons/Vector-2.svg" alt="twiter"></a></li>
+                <li><a href=""><img src="assets/icons/Vector-3.svg" alt="linked"></a></li>
+            </ul>
+        </footer>
+    </div>
+    <script src="scripts/index.js"></script>
+    <script src="scripts/changeImg.js"></script>
+    <script src="scripts/changeLight.js"></script>
+    <script src="scripts/changeLanguage.js"></script>
+    <script src="scripts/buttonAnimation.js"></script>
+</body>
+</html>
